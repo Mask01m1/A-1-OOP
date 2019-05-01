@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseShapes.cs" />
     <Compile Include="Lesson.Counter.cs" />
     <Compile Include="Lesson.Shape.cs" />
     <Compile Include="Lesson.Transport.cs" />
+    <Compile Include="MyShapes.cs" />
     <Compile Include="Practice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

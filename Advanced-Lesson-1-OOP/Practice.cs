@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Advanced_Lesson_1_OOP
 {
-    public class Practice
+    public class Practice :MyShapes
     {
         /// <summary>
         /// A.L1.P1. Вывести матрицу (двумерный массив) отображающую площадь круга, 
@@ -14,6 +14,26 @@ namespace Advanced_Lesson_1_OOP
         /// </summary>
         public static void A_L1_P1_OOP()
         {
+            for (int i = 1; i < 10; i++)
+            {
+                MyCircle circle = new MyCircle(Rad: i);
+                MyTriangle triangle = new MyTriangle();
+                triangle.A = 4;
+                triangle.B = i;
+                MyFoursquare foursquare = new MyFoursquare();
+                foursquare.a = i;
+
+                IShape[] shapes = new IShape[]
+                {
+                    circle,
+                    triangle,
+                    foursquare,
+                };
+                foreach (var shape in shapes)
+                {
+                    shape.Draw();
+                }
+            }
         }
 
 
